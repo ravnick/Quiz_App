@@ -26,7 +26,7 @@ body {
 h1 {
     text-align: center;
     color: #2c3e50;
-   
+
 }
 
 #quizContainer {
@@ -106,38 +106,37 @@ h1 {
     color: #00ff0d;
 }
 
-@media screen and (max-width: 600px) and (min-width: 300px) {
-    body {
-        padding: 15px;
-    }
 
-    h1{
-        margin-top: 30px;
-    }
-    #quizContainer {
-        padding: 15px;
-        margin: 20px auto;
-        border-radius: 10px;
-        box-shadow: none;
-    }
+    @media screen and (max-width: 600px) {
 
-    #quizContainer h3 {
-        font-size: 18px;
-    }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-    #quizContainer button {
-        font-size: 16px;
-        padding: 10px;
-        margin: 6px 0;
-    }
+        body {
+            padding: 20px 10px;
+            min-height: 100vh;
+        }
 
-    #nextBtn {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin: 20px auto;
-    }
+        #quizContainer {
+            padding: 15px;
+            margin-top: 40px;
+            /* 👈 Thoda neeche aane ke liye */
+        }
 
-    #resultBox {
-        font-size: 20px;
+        #nextBtn {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            /* 👈 Space between options and button */
+            width: 100%;
+            /* 👈 Full width for mobile */
+        }
+
+        #quizContainer h3 {
+            font-size: 18px;
+            text-align: center;
+        }
     }
-}
